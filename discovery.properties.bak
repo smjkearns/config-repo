@@ -1,8 +1,5 @@
-spring.application.name=discovery
+spring.application.name=discoveryserver
 server.port=8081
-
-eureka.instance.hostname=localhost
-
-eureka.client.serviceUrl.defaultZone=httplocalhost8082eureka
 eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
+eureka.client.service-url.defaultZone=http://localhost:8081/eureka
