@@ -6,9 +6,9 @@ spring.datasource.username=root
 spring.datasource.password=shatt3R3d
 
 eureka.instance.leaseRenewalIntervalInSeconds = 10
-eureka.instance.metadataMap.instanceId=${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
+#eureka.instance.metadataMap.instanceId=${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
 
-eureka.instance.instanceId=${spring.application.name}:${spring.application.instance_id:${random.value}}
+#eureka.instance.instanceId=${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 eureka.client.registryFetchIntervalSeconds=5
 eureka.client.serviceUrl.defaultZone=http://localhost:8081/eureka
