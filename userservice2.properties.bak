@@ -9,8 +9,8 @@ spring.zipkin.baseUrl=http://localhost:9411
 spring.zipkin.sampler.probability=100
 
 eureka.instance.leaseRenewalIntervalInSeconds = 10
-#eureka.instance.metadataMap.instanceId=${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
 
+eureka.instance.metadataMap.instanceId=${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
 eureka.instance.instanceId=${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 eureka.client.registryFetchIntervalSeconds=5
