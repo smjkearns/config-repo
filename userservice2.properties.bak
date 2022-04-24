@@ -11,7 +11,7 @@ spring.zipkin.sampler.probability=100
 eureka.instance.leaseRenewalIntervalInSeconds = 10
 #eureka.instance.metadataMap.instanceId=${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
 
-#eureka.instance.instanceId=${spring.application.name}:${spring.application.instance_id:${random.value}}
+eureka.instance.instanceId=${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 eureka.client.registryFetchIntervalSeconds=5
 eureka.client.serviceUrl.defaultZone=http://localhost:8082/eureka
@@ -20,3 +20,5 @@ eureka.client.enabled=true
 eureka.client.serviceUrl.registerWithEureka=true
 
 security.oauth2.resource.userInfoUri=http://localhost:9999/auth/user
+
+logging.file.name=log/application.log
