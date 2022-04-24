@@ -10,7 +10,7 @@ spring.zipkin.sampler.probability=100
 
 eureka.instance.leaseRenewalIntervalInSeconds = 10
 
-eureka.client.registryFetchIntervalSeconds=5
+eureka.client.registryFetchIntervalSeconds=1
 eureka.client.serviceUrl.defaultZone=http://localhost:8082/eureka
 spring.cloud.service-registry.auto-registration.enabled=true
 eureka.client.enabled=true
